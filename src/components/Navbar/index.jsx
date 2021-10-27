@@ -5,7 +5,7 @@ import Link from "next/link";
 import HamburgerMenu from "./HamburgerMenu";
 
 const Navbar = () => {
-  const [viewMenu, setViewMenu] = useState(true);
+  const [viewMenu, setViewMenu] = useState(false);
   const navbarLinks = [
     {
       title: "Home",
@@ -16,7 +16,7 @@ const Navbar = () => {
       href: "/all-banks",
     },
   ];
-  console.log(viewMenu);
+
   return (
     <nav className="border-black border-b-2 bg-gray-200">
       <Head>

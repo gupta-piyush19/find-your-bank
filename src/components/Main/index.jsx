@@ -1,5 +1,12 @@
+import IndividualBankCard from "./IndividualBankCard";
+
 const Main = () => {
-  return <div></div>;
+  return (
+    <div>
+      Card
+      <IndividualBankCard />
+    </div>
+  );
 };
 
 export default Main;
