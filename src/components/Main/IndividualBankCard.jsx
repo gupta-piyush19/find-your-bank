@@ -32,6 +32,8 @@ const IndividualBankCard = () => {
               value={ifsc}
               onChange={(e) => setIfsc(e.target.value)}
               required
+              pattern="[A-Za-z]{4}0[A-Z0-9a-z]{6}"
+              title="Please Enter a Valid IFSC Code"
             />
             <button
               type="submit"

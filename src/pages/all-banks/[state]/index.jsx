@@ -1,5 +1,5 @@
 import axios from "axios";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import Filter from "../../../components/Filter";
 import Head from "next/head";
 import Link from "next/link";
@@ -42,8 +42,30 @@ const State = ({ cities }) => {
 
 export default State;
 
-export const getServerSideProps = async (context) => {
-  const { params } = context;
+export const getStaticPaths = async () => {
+  const config = {
+    method: "post",
+    url: "https://countriesnow.space/api/v0.1/countries/states",
+    headers: {},
+    data: {
+      country: "India",
+    },
+  };
+
+  const res = await axios(config);
+  const states = res.data.data.states;
+
+  const paths = states.map((state) => ({
+    params: { state: `${state.name}` },
+  }));
+
+  return {
+    paths,
+    fallback: false,
+  };
+};
+
+export const getStaticProps = async ({ params }) => {
   const { state } = params;
 
   const config = {
