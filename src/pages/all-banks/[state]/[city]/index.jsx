@@ -1,7 +1,17 @@
 import axios from "axios";
+import { useMemo } from "react";
+import Table from "../../../../components/Table";
+import COLUMNS from "../../../../components/Table/Columns";
 
 const City = ({ banks }) => {
-  return <div>City Test</div>;
+  const data = useMemo(() => banks, []);
+  const columns = useMemo(() => COLUMNS, []);
+
+  return (
+    <div className="mx-6">
+      <Table data={data} columns={columns} />
+    </div>
+  );
 };
 
 export default City;

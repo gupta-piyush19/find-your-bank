@@ -43,9 +43,6 @@ const IndividualBankCard = () => {
             </button>
           </form>
         </div>
-        <Link href={`/bank-details/123`} passHref>
-          <a>GoTo {ifsc}</a>
-        </Link>
       </div>
     </div>
   );
