@@ -27,7 +27,11 @@ const Navbar = () => {
         />
       </Head>
       <div className="main-navbar flex px-10 justify-between py-2 border-gray-300 border-b-2 items-center ">
-        <div className="logo font-merienda text-2xl">Find Your Bank</div>
+        <div className="logo font-merienda text-2xl">
+          <Link href="/">
+            <a>Find Your Bank</a>
+          </Link>
+        </div>
         <div className="navbar-links hidden md:flex gap-4">
           {navbarLinks.map((link, idx) => (
             <NavbarLinks key={idx} link={link} />

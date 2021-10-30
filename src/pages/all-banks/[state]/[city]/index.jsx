@@ -8,7 +8,7 @@ const City = ({ banks }) => {
   const columns = useMemo(() => COLUMNS, []);
 
   return (
-    <div className="mx-6 py-6">
+    <div className="mx-6 py-6 w-full overflow-x-scroll md:overflow-hidden">
       <Table data={data} columns={columns} />
     </div>
   );
