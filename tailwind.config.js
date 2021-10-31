@@ -9,6 +9,7 @@ module.exports = {
     extend: {
       fontFamily: {
         merienda: ["Merienda", "sans-serif"],
+        pridi: ["Pridi", "sans-serif"],
       },
     },
   },

@@ -83,7 +83,7 @@ const Table = ({ columns, data }) => {
             Page:{" "}
             <strong>
               <input
-                type="number"
+                type="numeric"
                 className="outline-none w-10 bg-gray-300 text-center"
                 min={1}
                 max={pageCount}
@@ -97,7 +97,7 @@ const Table = ({ columns, data }) => {
                     gotoPage(pageNumber);
                   }
                 }}
-              />
+              />{" "}
               of {pageOptions.length}{" "}
             </strong>
           </span>

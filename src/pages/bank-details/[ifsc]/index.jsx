@@ -1,10 +1,11 @@
 import axios from "axios";
+import IndividualBankCard from "../../../components/IndividualBankCard";
 
 const Bank = ({ bank, error }) => {
   if (error) return <h2 className="bg-gray-500 text-red-400">{error}</h2>;
   return (
-    <div>
-      Bank {JSON.stringify(bank, null, 2)} {error}
+    <div className="w-full flex items-center">
+      <IndividualBankCard bank={bank} />
     </div>
   );
 };
