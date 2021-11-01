@@ -16,7 +16,7 @@ const IndividualBankCard = () => {
   };
 
   return (
-    <div className="card">
+    <div className="card w-96 md:w-auto ">
       <div className="card-container rounded-lg bg-gray-200">
         <div className="card-info pb-4 border-b-2 border-gray-400">
           <div className="text-3xl p-4">Enter IFSC Code</div>
@@ -24,7 +24,7 @@ const IndividualBankCard = () => {
         <div className="card-base p-4">
           <form
             onSubmit={handleSubmit}
-            className="flex items-center justify-between gap-3"
+            className="flex items-center md:justify-between gap-6"
           >
             <input
               type="text"
@@ -37,7 +37,7 @@ const IndividualBankCard = () => {
             />
             <button
               type="submit"
-              className="text-lg border-2 border-gray-600 px-4 py-1 rounded-md"
+              className="text-lg border-2 border-gray-600 px-4 py-1 rounded-md hover:bg-gray-400 hover:text-white"
             >
               Search
             </button>

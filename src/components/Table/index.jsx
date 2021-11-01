@@ -1,7 +1,6 @@
 import React from "react";
 import { useTable, usePagination, useGlobalFilter } from "react-table";
 import classes from "./styles.module.css";
-import Link from "next/link";
 import { useRouter } from "next/router";
 import GlobalFilter from "./GlobalFilter";
 

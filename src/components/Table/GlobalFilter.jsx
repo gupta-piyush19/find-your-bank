@@ -9,11 +9,11 @@ const GlobalFilter = ({ filter, setFilter }) => {
   }, 300);
 
   return (
-    <div className="mx-auto">
-      <span className="text-lg">Search </span>
-      <span>
+    <div className="flex items-center gap-4 w-full">
+      <span className="lg:text-xl text-lg ">Search: </span>
+      <span className="w-full lg:w-3/4">
         <input
-          className="mx-auto border-2 border-blue-400 rounded-md h-11"
+          className=" border-2 border-blue-400 rounded-md h-11 w-full my-4"
           type="search"
           value={value || " "}
           onChange={(e) => {
