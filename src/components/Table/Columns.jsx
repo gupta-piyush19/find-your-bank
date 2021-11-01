@@ -13,6 +13,7 @@ const COLUMNS = [
     Header: "IFSC",
     accessor: "ifsc",
     width: "20%",
+    disableFilters: true,
   },
   //   {
   //     Header: "City",
