@@ -8,7 +8,7 @@ const AllBanks = ({ states }) => {
   const [data, setData] = useState(states);
 
   return (
-    <div className="px-6 pt-4 w-1/2 mx-auto flex flex-col">
+    <div className="px-6 pt-4 w-1/2 mx-auto flex flex-col dark:text-white">
       <Head>
         <title>Find Your Bank - All States</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
@@ -26,7 +26,7 @@ const AllBanks = ({ states }) => {
           {data?.map((state) => (
             <li key={state.state_code}>
               <Link href={`/all-banks/${state.name}`} passHref>
-                <div className="pb-2 text-xl tracking-wider cursor-pointer border-b-2 border-transparent hover:border-black">
+                <div className="pb-2 text-xl tracking-wider cursor-pointer border-b-2 border-transparent hover:border-black dark:hover:border-gray-100">
                   {state.name}
                 </div>
               </Link>

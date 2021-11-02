@@ -9,7 +9,7 @@ const GlobalFilter = ({ filter, setFilter }) => {
   }, 300);
 
   return (
-    <div className="flex items-center gap-4 w-full">
+    <div className="flex items-center gap-4 w-full dark:text-white">
       <span className="lg:text-xl text-lg ">Search: </span>
       <span className="w-full lg:w-3/4">
         <input

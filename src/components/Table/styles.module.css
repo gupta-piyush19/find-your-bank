@@ -32,7 +32,6 @@
 }
 
 .table .toolbar div {
-  border: 2px solid green;
   height: 100%;
   border-radius: 5px;
 }
@@ -52,10 +51,14 @@
   width: 100%;
   height: 100%;
   background: rgb(25, 10, 170, 0.7);
-  background: #b04ad8;
+  background: rgb(176, 74, 216, 0.7);
   font-size: 20px;
 }
 
 .table .toolbar div:nth-child(3) button {
   padding: 8px 0;
+}
+
+.dark .dataTable th {
+  border-color: red;
 }

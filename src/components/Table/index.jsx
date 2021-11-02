@@ -41,7 +41,7 @@ const Table = ({ columns, data }) => {
   return (
     <>
       <GlobalFilter filter={globalFilter} setFilter={setGlobalFilter} />
-      <div className={`w-full ${classes.table}`}>
+      <div className={`w-full ${classes.table} dark:text-white`}>
         <table {...getTableProps()} className={`w-full ${classes.dataTable}`}>
           <thead>
             {headerGroups.map((headerGroup) => (

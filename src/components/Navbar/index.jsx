@@ -3,6 +3,7 @@ import Head from "next/head";
 import { useState } from "react";
 import Link from "next/link";
 import HamburgerMenu from "./HamburgerMenu";
+import ThemeToggler from "../ThemeToggler";
 
 const Navbar = () => {
   const [viewMenu, setViewMenu] = useState(false);
@@ -18,7 +19,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="border-black border-b-2 bg-gray-200">
+    <nav className="border-black border-b-2 bg-gray-200 dark:bg-gray-800 dark:text-white">
       <Head>
         <link
           rel="preload"
@@ -32,11 +33,13 @@ const Navbar = () => {
             <a>Find Your Bank</a>
           </Link>
         </div>
-        <div className="navbar-links hidden md:flex gap-4">
+        <div className="navbar-links hidden md:flex gap-4 items-center">
+          <ThemeToggler />
           {navbarLinks.map((link, idx) => (
             <NavbarLinks key={idx} link={link} />
           ))}
         </div>
+
         <HamburgerMenu viewMenu={viewMenu} setViewMenu={setViewMenu} />
       </div>
       <section className="md:hidden">

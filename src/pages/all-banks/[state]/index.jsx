@@ -12,7 +12,7 @@ const State = ({ cities }) => {
   const { state } = router.query;
 
   return (
-    <div className="px-6 pt-4 w-1/2 mx-auto flex flex-col">
+    <div className="px-6 pt-4 w-1/2 mx-auto flex flex-col dark:text-white">
       <Head>
         <title>Find Your Bank - All Cities</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
@@ -28,7 +28,7 @@ const State = ({ cities }) => {
           {data?.map((city, idx) => (
             <li key={idx}>
               <Link href={`/all-banks/${state}/${city}`} passHref>
-                <div className="pb-2 text-xl tracking-wider cursor-pointer border-b-2 border-transparent hover:border-black">
+                <div className="pb-2 text-xl tracking-wider cursor-pointer border-b-2 border-transparent hover:border-black dark:hover:border-gray-100">
                   {city}
                 </div>
               </Link>
