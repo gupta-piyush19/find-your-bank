@@ -2,9 +2,10 @@ import axios from "axios";
 import IndividualBankCard from "../../../components/IndividualBankCard";
 
 const Bank = ({ bank, error }) => {
-  if (error) return <h2 className="bg-gray-500 text-red-400">{error}</h2>;
+  if (error)
+    return <h2 className=" w-full bg-gray-500 text-red-400">{error}</h2>;
   return (
-    <div className="w-full flex items-center">
+    <div className="w-full flex items-center dark:text-white ">
       <IndividualBankCard bank={bank} />
     </div>
   );

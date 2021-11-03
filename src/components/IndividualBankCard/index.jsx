@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Maps from "../Maps";
 
 const IndividualBankCard = ({ bank }) => {
   const {
@@ -20,6 +21,7 @@ const IndividualBankCard = ({ bank }) => {
     IMPS,
   } = bank;
 
+  const address = `${ADDRESS}, ${CENTRE}, ${CITY}, ${DISTRICT}, ${STATE}`;
   return (
     <>
       <Head>
@@ -29,10 +31,11 @@ const IndividualBankCard = ({ bank }) => {
           rel="stylesheet"
         />
       </Head>
-      <div className="md:mx-auto md:w-3/4 lg:w-1/2 m-4 shadow-lg">
+      <div className="md:mx-auto md:w-3/4 lg:w-1/2 m-4 shadow-lg dark:bg-gray-800 rounded-md">
         <div className="content p-6">
           <div className="title md:text-4xl text-3xl border-b-2 md:border-b-4 mx-auto border-red-400 md:pb-3 max-w-max font-pridi mb-3 md:mb-6 ">
             {BANK}
+            <Maps bank={BANK} address={ADDRESS} />
           </div>
           <div className="mb-2 text-lg">
             <span className="font-bold">BANKCODE:</span> {BANKCODE}
@@ -47,8 +50,7 @@ const IndividualBankCard = ({ bank }) => {
             <span className="font-bold">BRANCH:</span> {BRANCH}
           </div>
           <div className="mb-2 text-lg">
-            <span className="font-bold">ADDRESS:</span>{" "}
-            {`${ADDRESS}, ${CENTRE}, ${CITY}, ${DISTRICT}, ${STATE}`}
+            <span className="font-bold">ADDRESS:</span> {address}
           </div>
           {CONTACT && (
             <div className="mb-2 text-lg">

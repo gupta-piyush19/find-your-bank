@@ -16,7 +16,7 @@ const Filter = ({ dataList, setData }) => {
     <div>
       <input
         type="text"
-        className="border-2 border-black rounded-md px-2 outline-none py-2 w-full focus:border-2 focus:border-purple-700"
+        className="border-2 border-black rounded-md px-2 outline-none py-2 w-full focus:border-2 focus:border-purple-700 dark:text-black"
         placeholder="Start Typing to find..."
         value={filter}
         onChange={(e) => {

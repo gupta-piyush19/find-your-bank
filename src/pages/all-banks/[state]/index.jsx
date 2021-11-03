@@ -12,7 +12,7 @@ const State = ({ cities }) => {
   const { state } = router.query;
 
   return (
-    <div className="px-6 pt-4 w-1/2 mx-auto flex flex-col dark:text-white">
+    <div className="md:px-6 pt-4 md:w-1/2 mx-auto flex flex-col dark:text-white">
       <Head>
         <title>Find Your Bank - All Cities</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
