@@ -1,6 +1,6 @@
 const COLUMNS = [
   {
-    Header: "Bank Name",
+    Header: "BankName",
     accessor: "bank_name",
     width: "20%",
   },
@@ -13,7 +13,6 @@ const COLUMNS = [
     Header: "IFSC",
     accessor: "ifsc",
     width: "20%",
-    disableFilters: true,
   },
   //   {
   //     Header: "City",

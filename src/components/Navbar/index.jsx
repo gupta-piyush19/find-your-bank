@@ -50,7 +50,9 @@ const Navbar = () => {
         >
           {navbarLinks.map((link, idx) => (
             <Link key={idx} href={link.href}>
-              <a className="py-1">{link.title}</a>
+              <a className="py-1" onClick={() => setViewMenu(false)}>
+                {link.title}
+              </a>
             </Link>
           ))}
         </div>

@@ -16,7 +16,7 @@ const IndividualBankCard = () => {
   };
 
   return (
-    <div className="card w-96 md:w-auto ">
+    <div className="card w-96 md:w-auto dark:text-black">
       <div className="card-container rounded-lg bg-gray-200">
         <div className="card-info pb-4 border-b-2 border-gray-400">
           <div className="text-3xl p-4">Enter IFSC Code</div>
@@ -28,7 +28,7 @@ const IndividualBankCard = () => {
           >
             <input
               type="text"
-              className="outline-none rounded-md h-10 pl-3 focus:border-green-300 border-2 border-blue-300"
+              className="outline-none rounded-md h-10 pl-3 focus:border-green-300 border-2 border-blue-300 bg-white"
               value={ifsc}
               onChange={(e) => setIfsc(e.target.value)}
               required

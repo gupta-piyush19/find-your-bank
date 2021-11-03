@@ -16,6 +16,7 @@ module.exports = {
         darkBg: "#1F1B24",
         darkLink: "#FF6FFF",
         darkLinkHover: "#FF69B4",
+        darkInput: "#3B3B3B",
       },
     },
   },

@@ -4,7 +4,7 @@ const Footer = () => {
   const footerLinks = [
     {
       title: "GitHub",
-      href: "https://github.com/",
+      href: "https://github.com/gupta-piyush19",
     },
     {
       title: "LinkedIn",

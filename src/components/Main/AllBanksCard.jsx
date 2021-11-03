@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const AllBanksCard = () => {
   return (
-    <div className="card w-96">
+    <div className="card w-96 dark:text-black">
       <div className="card-container rounded-lg bg-gray-200">
         <div className="card-info pb-4 border-b-2 border-gray-400">
           <div className="text-3xl p-4">All Banks</div>
