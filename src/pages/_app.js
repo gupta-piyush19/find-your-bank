@@ -8,7 +8,7 @@ const queryClient = new QueryClient();
 
 function MyApp({ Component, pageProps }) {
   return (
-    <ThemeProvider attribute="class">
+    <ThemeProvider attribute="class" defaultTheme="light">
       <QueryClientProvider client={queryClient}>
         <Layout>
           <Component {...pageProps} />
